@@ -1,0 +1,150 @@
+html,
+body {
+    background-image: url('/park-4375072_1920.jpg');
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.bg-login-container {
+    background-color: #111;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+
+.neon-title {
+    color: #00ff88;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.label {
+    display: block;
+    margin-bottom: 6px;
+    color: #f9fffc;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.input {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    transition: 0.3s ease;
+    font-size: 15px;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #66ff66;
+    box-shadow: 0 0 5px #66ff66;
+}
+
+.input::placeholder {
+    color: #ffffff;
+}
+
+.btn-login {
+    background-color: #00ff88;
+    color: #000;
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+    margin-top: 8px;
+}
+
+.btn-login:hover {
+    background-color: #00e676;
+    transform: scale(1.02);
+}
+
+.text-light {
+    color: #88cc88;
+    font-size: 13px;
+}
+
+.text-green-400 {
+    background: none;
+    border: none;
+    color: #00ff88;
+    font-size: 14px;
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+.text-green-400:hover {
+    color: #b3ffcc;
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    html,
+    body {
+        display: block;
+    }
+
+    .login-wrapper {
+        padding: 0;
+    }
+
+    .bg-login-container {
+        border-radius: 0;
+        width: 100vw;
+        height: 100vh;
+        max-width: none;
+        box-shadow: none;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .neon-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .input,
+    .btn-login {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .label {
+        font-size: 13px;
+    }
+
+    .text-light {
+        font-size: 12px;
+    }
+}

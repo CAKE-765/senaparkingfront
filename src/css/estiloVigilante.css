@@ -1,0 +1,171 @@
+.vista-vigilante {
+    background-color: #e60000;
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('/park-4375072_1920.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    backdrop-filter: blur(2px);
+    overflow-y: auto;
+}
+
+.header-vigilante {
+    background-color: #000000;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+}
+
+.vista-vigilante-p1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.vista-vigilante-titulo {
+    margin: 0;
+}
+
+.vista-vigilante-boton {
+    margin: 0;
+}
+
+.vista-vigilante-p2 {
+    margin: 50px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.titulo {
+    font-size: 2rem;
+    color: var(--primary-green);
+    text-shadow: 0 0 10px rgba(0, 255, 136, 0.6);
+}
+
+.btn-cerrar-sesion {
+    background: linear-gradient(145deg, #ff4d4d, #ff1a1a);
+    color: #fff;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);
+}
+
+.btn-cerrar-sesion:hover {
+    transform: scale(1.05);
+    background: linear-gradient(145deg, #ff1a1a, #e60000);
+}
+
+.lista-usuarios {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.usuario-item {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1.2rem;
+    border: 1px solid var(--primary-green);
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 255, 136, 0.1);
+    backdrop-filter: blur(5px);
+    color: white;
+}
+
+.lista-vehiculos {
+    margin-top: 1rem;
+    padding-left: 1.2rem;
+}
+
+.vehiculo-item {
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
+}
+
+.mensaje-vacio {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+}
+
+/* Buscador */
+.busqueda-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.input-busqueda {
+    padding: 0.7rem;
+    border-radius: 8px;
+    border: 1px solid var(--primary-green);
+    width: 250px;
+    font-size: 1rem;
+    background-color: #111;
+    color: white;
+}
+
+.btn-buscar {
+    padding: 0.7rem 1.2rem;
+    background: var(--primary-green);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-buscar:hover {
+    background: #00c874;
+    transform: scale(1.05);
+}
+
+.mensaje-error {
+    color: #ff4d4d;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+.resultado-busqueda {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--primary-green);
+    color: white;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+.resultado-busqueda h3 {
+    margin-top: 0;
+}
+
+.resultado-busqueda ul {
+    padding-left: 1.2rem;
+    list-style: none;
+}
